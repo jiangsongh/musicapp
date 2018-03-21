@@ -1,0 +1,166 @@
+.page-box{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #fff;
+/*    transform: translateX(100%);*/
+}
+.page-box>i{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 18px;
+	color: #2299ED;
+}
+.boxTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+    width: 220px;
+    text-align: center;
+}
+.boxSinger {
+    position: absolute;
+    right: 68px;
+    top: 45px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+}
+.page-box>img {
+    display: block;
+    width: 160px;
+ 	height: 160px;
+    border-radius: 50%;
+    position: absolute;
+    top: 92px;
+    left: 107px;
+	animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation{
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+.songText {
+    width: 170px;
+    height: 249px;
+    position: absolute;
+    top: 266px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+#musicText{
+	font-size: 14px;
+}
+.scroll {
+    width: 288px;
+    height: 6px;
+    border: 1px solid #999;
+    /* margin: auto; */
+    position: absolute;
+    bottom: 90px;
+    /* left: 44px; */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bar{
+	width: 0%;
+	height: 100%;
+	background-color: #2299ED;
+	position: relative;
+}
+.mask{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: #FFCD2D;
+	right: -3px;
+	top: -3px;
+}
+#moveTime{
+	position: absolute;
+	left: 5px;
+	bottom: 86px;
+	font-size: 14px;
+}
+#totalTime{
+	position: absolute;
+	right: 5px;
+	bottom: 86px;
+	font-size: 14px;
+}
+.box-btn {
+    width: 11rem;
+    height: 50px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 2rem;
+/*	background-color: orange;*/
+}
+.box-left>img {
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.box-right{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 2rem;
+/*	background-color: orange;*/
+}
+.box-right>img {
+    width: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.box-mid{
+	position: absolute;
+	left: 2rem;
+	top: 0;
+	bottom: 0;
+	width: 7rem;
+}
+.box-mid>img:nth-child(1){
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.box-mid>img:nth-child(2) {
+    position: absolute;
+    left: 2.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.8rem;
+}
+.box-mid>img:nth-child(3){
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+}

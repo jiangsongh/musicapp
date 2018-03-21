@@ -1,0 +1,211 @@
+.page-singer{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #F2F2F2;
+}
+.singerList{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	margin-top: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.singerList>span {
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    color: #666;
+    position: absolute;
+    left: 10px;
+	top: 0;
+}
+.singerList>i {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+}
+.listSinger{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateX(100%);
+    overflow:hidden;
+    overflow-y: auto;
+}
+.listSinger>div:first-child{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	background-color: #2CA2F9;
+	color: #fff;
+}
+.listSinger>div:nth-child(2){
+	position: absolute;
+	top: 48px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+}
+.listSingers>li{
+	height: 60px;
+	margin-bottom: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+	position: relative;
+}
+.listSingers>li:nth-child(2n){
+	background-color: #f2f2f2;
+}
+.listSingers>li>img{
+	width: 50px;
+
+}
+.listSingers>li>span {
+    position: absolute;
+    left: 86px;
+    top: 5px;
+    width: 102px;
+    line-height: 50px;
+}
+.listSingers>li>i{
+	position: absolute;
+	right: 10px;
+	top: 22px;
+	color: #666;
+}
+.listSinger>div:first-child{
+	position: relative;
+}
+.listSinger>div:first-child>div:nth-child(2){
+	position: absolute;
+	left: 12px;
+	top: 15px;
+	font-size: 18px;
+}
+
+.singerMyData {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* transform: translateX(100%); */
+    background-color: #fff;
+    overflow:hidden;
+    overflow-y: auto;
+}
+.singerMyDataTitle>div {
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    font-size: 20px;
+    color: #fff;
+}
+.singerMyDataTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: #2CA2F9;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 22px;
+}
+.singerMyData>img {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.singerMyData>span {
+    position: absolute;
+    right: 36px;
+    top: 92px;
+    width: 154px;
+    height: 36px;
+    color: #666;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+}
+.MyDataLine {
+    width: 4px;
+    height: 16px;
+    background-color: #f00;
+    position: absolute;
+    top: 273px;
+    left: 10px;
+}
+.dataTitle {
+    position: absolute;
+    left: 30px;
+    top: 272px;
+}
+.dataInformation {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 310px;
+    height: 120px;
+    background-color: #f2f2f2;
+}
+.dataInformation>ul{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.dataInformation>ul:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.dataInformation>ul>li{
+	width: 50%;
+	float: left;
+}
+.dataInformation>ul:nth-child(2n+1){
+	background-color: #f9f9f9;
+}
+.dataInformation span{
+	margin-left: 10px;
+}
+.Datalinearea{
+    width: 4px;
+    height: 16px;
+    background-color: #f00;
+    position: absolute;
+    top: 273px;
+    left: 10px;
+}
+.dataTitlearea{
+	position: absolute;
+    left: 30px;
+    top: 272px;
+}
+.linearea,.titlearea{
+	top: 456px;
+}
+.dataMyTitle{
+	position: absolute;
+	top: 496px;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+}

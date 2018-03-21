@@ -1,0 +1,447 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family: 'Microsoft YaHei';
+	font-size: 16px;
+}
+/*************主容器*****************/
+.main-view{
+	width: 100%;
+	height: 100%;
+}
+/*************带导航的页容器*****************/
+.page-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow:hidden;
+}
+/*************页容器头部*****************/
+.page-top{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 48px;
+	background-color: #2CA2F9;
+}
+.page-search{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 60px;
+	height: 100%;
+	
+	text-align: center;
+}
+.page-search>i{
+	font-size: 24px;
+	color: #fff;
+	margin-top: 12px;
+}
+.page-icon{
+	position: absolute;
+	width: 153px;
+	left: 100px;
+	top: 0;
+	bottom: 0;
+	
+}
+.page-icon>img{
+	width: 120px;
+	height: 28px;
+	background-size: 100%;
+	margin-top: 10px;
+}
+.page-down{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100px;
+	height: 100%;
+	text-align: center;
+}
+.page-down>div{
+	width: 80px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color:#fff;
+	margin-top: 10px;
+}
+
+/*************导航*****************/
+.page-nav{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 48px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+}
+.page-nav>div{
+	flex:1;
+	padding-top:8px;
+	box-sizing: border-box;
+	color: #999;
+	border-bottom: 2px solid #f2f2f2;
+}
+.page-nav>div>i,.page-nav>div>span{
+	display: block;
+	text-align: center;
+}
+.page-nav>div>i{
+	font-size: 20px;
+}
+.page-nav>div>span{
+	font-size: 14px;
+}
+.page-nav>div.actived{
+	border-bottom: 2px solid #2CA2F9;
+	color: #2CA2F9;
+}
+.page-main{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 96px;
+	bottom: 0;
+	border-top: 1px solid #E5E5E5;
+	/*background-color: red;*/
+/*	overflow: hidden;
+	overflow-y: scroll;*/
+}
+.page-main>div:not(:first-child){
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.page-main>div:not(:first-child){
+	transform: translate(100%);
+}
+#homePage{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+/*************轮播图*****************/
+.ad{
+	width: 100%;
+	height: 4rem;
+	position: relative;
+	overflow: hidden;
+}
+.ad>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+}
+.ad>img:not(:first-child){
+	transform: translate(100%);
+}
+/*************导航点*****************/
+.point {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height: 12%;
+    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+}
+.point>div{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border:1px solid #fff;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.point>div.actived{
+	background-color: #fff;
+}
+/*************轮播图移动效果*****************/
+@keyframes rightIn{
+	from{
+		transform:translate(100%);
+	}
+	to{
+		transform:translateX(0px);
+	}
+}
+@keyframes rightOut{
+	from{
+		transform:translate(0%);
+	}
+	to{
+		transform:translateX(100%);
+	}
+}
+@keyframes leftIn{
+	from{
+		transform:translate(-100%);
+	}
+	to{
+		transform:translateX(0px);
+	}
+}
+@keyframes leftOut{
+	from{
+		transform:translateX(0%);
+	}
+	to{
+		transform:translateX(-100%);
+	}
+}
+
+.left-in{
+	animation:leftIn 1s linear forwards;
+}
+.left-out{
+	animation:leftOut 1s linear forwards;
+}
+.right-in{
+	animation:rightIn 1s linear forwards;
+}
+.right-out{
+	animation:rightOut 1s linear forwards;
+}
+/*************加载新歌速递，热门歌手样式*****************/
+h2{
+	height: 36px;
+	line-height: 36px;
+	background-color: #f0f0f0;
+	color: #333;
+	font-size: 16px;
+	padding-left: 10px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative; 
+}
+.hot-song{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+.hot-song>div{
+	width: 4rem;
+	height: 4rem;
+	text-align: center;
+	margin-top: 5px;
+}
+.hot-song>div>img{
+	border-radius: 6px;
+	width: 3rem;
+	height: 3rem;
+	background-size: 100%;
+}
+.hot-song>div>h4{
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/*************未加载完前的样式*****************/
+.loadNow{
+	width: 100%;
+	height: 3rem;
+	line-height: 100px;		
+	margin:100px auto;
+	text-align: center;
+}
+.loadNow>i{
+	width: 5px;
+	height: 10%;
+	background-color: #0C8ED9;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.loadNow>i:nth-child(1){
+	animation: myfirst .75s linear 0s infinite alternate;
+}
+.loadNow>i:nth-child(2){
+	animation: myfirst .75s linear .15s infinite alternate;
+}
+.loadNow>i:nth-child(3){
+	animation: myfirst .75s linear .3s infinite alternate;
+}
+.loadNow>i:nth-child(4){
+	animation: myfirst .75s linear .45s infinite alternate;
+}
+.loadNow>i:nth-child(5){
+	animation: myfirst .75s linear .6s infinite alternate;
+}
+.loadNow>i:nth-child(6){
+	animation: myfirst .75s linear .75s infinite alternate;
+}
+.loadNow>i:nth-child(7){
+	animation: myfirst .75s linear 1s infinite alternate;
+}
+.loadNow>i:nth-child(8){
+	animation: myfirst .75s linear 1.15s infinite alternate;
+}
+@keyframes myfirst{
+	0%{height:0%;}
+	100%{height:50%;}
+}
+
+
+.page-parade{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #F2F2F2;
+}
+.page-parade>div {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.paradeImg{
+    width: 100px;
+    height: 100px;
+}
+.paradeImg>img {
+    width: 100px;
+}
+.paradeText {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    right: 0;
+}
+.paradeText>h3{
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.paradeText>i {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.9rem;
+    color: #878787;
+}
+.paradeText>h5{
+	font-weight: 500;
+	font-size: 14px;
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+}
+.paradeText>h5>span:first-child{
+	color: #999;
+	margin-right: 0.2rem;
+}
+.page-parade>div:not(:first-child){
+	margin-top: 0.2rem;
+}
+.songBtnOn{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 48px;
+}
+.songBtnOn>i{
+	font-size: 18px;
+	color: #999;
+}
+.listSong{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translate(100%);
+	background-color: #fff;
+}
+.listSong>div>div{
+	position: absolute;
+	left: 0.2rem;
+	top: 0.2rem;
+	color: #fff;
+	font-size: 20px;
+}
+.listSong>div:nth-child(1) {
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.listSong>div:nth-child(1)>img{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+.listSong>div:nth-child(2) {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.paradeSong>ul>li{
+	height: 48px;
+	line-height: 48px;
+	position: relative;
+}
+.songId{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 1rem;
+	height:48px;
+	text-align: center;
+}
+.songInformation{
+	position: absolute;
+	left: 1.2rem;
+	top: 0;
+	bottom: 0;
+	width: 8rem;
+}
+.songInformation>h5{
+	height: 20px;
+	line-height: 20px;
+	font-weight: 500;
+}
+.songInformation>h6{
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #666;
+}
+.paradeSong>ul>li:nth-child(2n){
+	background-color: #f2f2f2;
+}
+

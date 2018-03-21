@@ -1,0 +1,206 @@
+.page-user{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.page-user>i {
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    font-size: 80px;
+    color: #2CA2F9;
+}
+.page-user>div:nth-child(2){
+    width: 8rem;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #179AF4;
+    border-radius: 18px;
+    color: #179AF4;
+    font-size: 16px;
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    text-align: center;
+}
+.page-user>div:nth-child(3){
+	width: 8rem;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #179AF4;
+    border-radius: 18px;
+    color: #179AF4;
+    font-size: 16px;
+    background-color: #fcfcfc;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+    text-align: center;
+}
+
+#registerDialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+/*    transform: translateX(100%);*/
+}
+#registerDialog>div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#registerDialog>div>i{
+    font-size: 26px;
+    color: #2299ED;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.register-title{
+	margin-bottom: 90px;
+}
+.register-title>img{
+	float: left;
+}
+.register-title>i {
+    font-size: 60px;
+    color: #2299ED;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.register-title>span {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    font-size: 24px;
+    color: #2299ED;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.register-title>div {
+    position: absolute;
+    top: 220px;
+    height: 3px;
+    background-color: #2299ED;
+    width: 10rem;
+}
+.register-frame {
+    width: 85%;
+    height: 48px;
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+    margin: auto;
+    position: relative;
+}
+.register-frame>label {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+.register-frame>label>i{
+	font-size: 32px;
+	color: #2299ED;
+}
+.register-frame>input {
+    height: 32px;
+    line-height: 32px;
+    border: 0px;
+    color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 64px;
+}
+.frame{
+    position: absolute;
+    top: 226px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#comment {
+    font-size: 26px;
+    margin-left: -5px;
+}
+.phoneBtn {
+    width: 100px;
+    height: 32px;
+    background-color: #2299ED;
+    color: #fff;
+    line-height: 32px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+}
+.frame>div:nth-child(2)>input{
+    width: 120px;
+}
+#pass {
+    font-size: 26px;
+    margin-left: -5px;
+}
+.errorText{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    color: red;
+    font-size: 14px;
+}
+.errText{
+    margin-top: 10px;
+}
+.register-buttom{
+    height: 100px;
+}
+.btn {
+    width: 300px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #2299ED;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+    border: 0;
+    margin: 60px 32px;
+    font-size: 20px;
+}
+
+#loginDiglog{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+/*    transform: translateX(100%);*/
+}
+
+#loginDiglog>div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#loginDiglog>div>i{
+    font-size: 26px;
+    color: #2299ED;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
